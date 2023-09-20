@@ -1,0 +1,96 @@
+@import url("reset.css");
+
+/* селектор тегу */
+ul {
+	color: green;
+}
+
+ol {
+	color: rgb(255, 0, 217);
+}
+
+/* Селектор класу */
+.text {
+	color: blueviolet;
+}
+
+.mark {
+	color: red;
+}
+
+/* Селектор ID */
+#history {
+	color: brown;
+}
+
+#reproduction {
+	color: blue;
+}
+#character{
+	color: green;
+}
+#appearance {
+	color: red;
+}
+#color {
+	color: aqua;
+}
+#care{
+	color: blue;
+}
+#photos{
+	color: yellowgreen;
+}
+#up{
+	color: red;
+}
+/* Комбінації Селекторів */
+div.color__cat{
+	color: rgb(38, 255, 0);
+}
+div.text {
+	color: brown;
+}
+.page__text.text{
+	color: rgb(246, 254, 7);
+}
+
+.color__mark,
+.color__text{
+	color: red;
+}
+/* Каскадність Селекторів */
+.color__cat a{
+	color: red;
+}
+.appearance a{
+	color: red;
+}
+.appearance .text__block{
+	color: wheat;
+}
+.text *{
+	color: rgb(197, 59, 252);
+}
+.text > p {
+	color: blue;
+}
+.appearance > p{
+	color: yellow;
+}
+.text ~ p {
+	color: red;
+}
+.content + a {
+	color: red;
+}
+.mark + span {
+	color: green;
+}
+.text > h2 + p {
+	color: wheat;
+}
+/* Селектор Атрибутів */
+[class*="__container"] {
+	color: aqua;
+}
