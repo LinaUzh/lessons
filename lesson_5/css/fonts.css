@@ -1,0 +1,24 @@
+@font-face {
+	font-family: Croogla4F;
+	src: url(../fonts/Croogla4F.woff2) format("woff2");
+	src: url(../fonts/Croogla4F.woff) format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: NyghtSerif-Dark;
+	src: url(../fonts/NyghtSerif-Dark.woff2) format("woff2");
+	src: url(../fonts/NyghtSerif-Dark.woff) format("woff");
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: Veselka4F;
+	src: url(../fonts/Veselka4F.woff2) format("woff2");
+	src: url(../fonts/Veselka4F.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
