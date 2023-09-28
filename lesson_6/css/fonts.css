@@ -1,0 +1,18 @@
+
+
+@font-face {
+	font-family: LucienSchoenschriftvCAT;
+	src: url(../fonts/LucienSchoenschriftvCAT.woff2) format(woff2);
+	src: url(../fonts/LucienSchoenschriftvCAT.woff) format(woff);
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face{
+	font-family: AaronScript;
+	src: url(../fonts/AaronScript.woff2) format(woff2);
+	src: url(../fonts/AaronScript.woff) format(woff);
+	font-weight : normal;
+	font-style: italic;
+	font-display: swap;
+}

@@ -1,0 +1,208 @@
+/* підключення за допомогою плагіну */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("fonts.css");
+@import url("reset.css");
+
+.content a  { 
+	max-width: 250px;
+	background-color: #d06b00;
+	margin: 0px 0px 15px 20px;
+	padding: 10px;
+	
+
+}
+.content li {
+	margin-bottom: 10px;
+}
+/* Part #1 Consulting */
+.title-photo {
+	margin-bottom: 37px;
+}
+.part-one {
+	max-width: 692px;
+	margin: 0 auto;
+}
+.why-us h2 {
+	color: #37393f;
+	font-family: Poppins, sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 3px;
+}
+.why-us p {
+	color: #7d7d7d;
+	font-family: Inter, sans-serif;
+	font-size: 18px;
+	line-height: 1.47;
+	text-align: justify;
+}
+.why-us > p {
+	margin-bottom: 42px;
+}
+.why-us h3 {
+	color: #6b77e5;
+	font-family: Poppins, sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 12px;
+	margin-bottom: 12px;
+}
+/* Part #2 Consulting */
+
+.subt-photo {
+	width: 331px;
+	max-height: 265px;
+	margin-right: 29px;
+}
+.benefits {
+	display: inline-block;
+	margin-left: 361px;
+	margin-top: -263px;
+	vertical-align: middle;
+}
+.secondpart h2 {
+	color: #37393f;
+	font-family: Poppins, sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 15px;
+}
+.secondpart h3 {
+	color: #40ddb6;
+	font-family: Poppins, sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 21px;
+}
+.benefits > ul > li {
+	color: #7d7d7d;
+	font-family: Inter, sans-serif;
+	font-size: 18px;
+	line-height: normal;
+	padding: 15px;
+}
+.secondpart {
+	max-width: 692px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+/* Jewellery */
+.jew-container {
+	max-width: 1169px;
+	margin: 0 auto 50px;
+	font-family: Inter, sans-serif;
+	color: #474747;
+	line-height: 1.8;
+	height: 518px;
+	font-size: 0;
+}
+.jew-container h3 {
+	color: #d06b00;
+	font-family: Inter, sans-serif;
+	font-size: 28px;
+	margin-bottom: 13px;
+}
+.jew-container h1 {
+	color: #0e333d;
+	font-family: "DM Serif Text";
+	font-size: 59px;
+	line-height: 1.465;
+	margin-bottom: 25px;
+}
+.text-block {
+	display: inline-block;
+	max-width: 563px;
+	margin-right: 38px;
+	font-size: 20px;
+}
+.text-block h1 {
+	max-width: 526px;
+}
+.text-block p {
+	margin-left: 7px;
+	padding-bottom: 13px;
+}
+.text-block h3 {
+	max-width: 186px;
+}
+.photo-block {
+	margin-left: 595px;
+	margin-top: -490px;
+	vertical-align: top;
+}
+.jw-photo {
+	margin-right: 22px;
+}
+/*  Practice */
+.link > p > a {
+	color: #4cb4d1;
+	font-size: 30px;
+	text-decoration: line-through;
+	margin: 50%;
+	text-shadow:
+		2px 5px 5px #d06b00,
+		-2px 2px 1px yellow;
+}
+.prctc img {
+	margin-left: 20px;
+	margin-right: 15px;
+}
+.prctc p {
+	background-color: #40ddb6;
+	padding: 15px;
+	font-family: LucienSchoenschriftvCAT, italic;
+	line-height: 30px;
+	font-size: 30px;
+	
+	text-shadow: 2px 3px 5px purple;
+	display: inline-block;
+	max-width: 50%;
+}
+.prctc h2 {
+	font-family: AaronScript, italic;
+	font-size: 35px;
+	background-color: #d06b00;
+	color: aliceblue;
+	padding: 20px;
+	text-align: center;
+	text-shadow: 3px 3px 5px#37393f;
+	margin-bottom: 10px;
+}
+.prctc-two p {
+	display: inline-block;
+	background-color: black;
+	color: aliceblue;
+	font-family: LucienSchoenschriftvCAT, italic;
+	line-height: 1.3;
+	font-size: 30px;
+	text-shadow: 2px 3px 2px yellow;
+	vertical-align: bottom;
+	padding: 30px 10px 15px 10px;
+	margin-bottom: 50px;
+	max-width: 50%;
+	overflow-y: scroll;
+}
+.prctc-two img {
+	margin: 10px 30px 0px 100px;
+}
+.prctc-two {
+	margin-bottom: 20px;
+}
+.last-content p {
+	max-width: 600px;
+background-color: #562929;
+box-sizing: border-box;
+margin-left: 30px;
+overflow: scroll;
+
+}
+.last-content img {
+	max-width: 200px;
+	margin-top: -30px;
+	margin-left: 15px;
+}
