@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+/* !пишу font-weight: 600 - тому що  на сайті не було значення semi-bolt, на сайті де скачувала розміри різняться   */
+@font-face {
+	font-family: CoreSansC;
+	src: url(../fonts/CoreSansC-65Bold.woff2) format(woff2);
+	src: url(../fonts/CoreSansC-65Bold.woff) format(woff);
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: Causten-Regular;
+	src: url(../fonts/Causten-Regular.woff2) format(woff2);
+	src: url(../fonts/Causten-Regular.woff) format(woff);
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: Causten-Bold;
+	src: url(../fonts/Causten-Bold.woff2) format(woff2);
+	src: url(../fonts/Causten-Bold.woff) format(woffs);
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
