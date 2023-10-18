@@ -1,0 +1,773 @@
+/* підключення за допомогою плагіну */
+
+@import url("fonts.css");
+@import url("reset.css");
+.header-content {
+	max-width: 1430px;
+	padding: 0 15px;
+	font-size: 20px;
+	line-height: 1.3;
+	margin: 0 auto;
+	background-color: rgb(201, 199, 197);
+}
+.practice-body-content p:nth-child(even) {
+	background-color: beige;
+}
+.header-list > ul > li {
+	display: inline-block;
+	max-width: 300px;
+	background: white;
+	outline: 2px solid violet;
+	padding: 20px;
+	border-radius: 25px;
+	box-shadow: inset 5px 1px 5px rgb(226, 195, 226);
+}
+
+.header-list > ul {
+	padding: 0 15px;
+	text-align: center;
+	font-family: Poppins, sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.header-list > ul > li:hover {
+	text-decoration: 1px underline violet;
+}
+/* !виходить свого роду анімація) (блоки відскакують один від одного на відступ який заданий) .header-content>ul>li:hover:not(:last-child){margin: 0 15px 40px 0; } , я хотіла хавером добавити нижнє підкреслення , щоб це все було в одному коді */
+.header-list > ul > li:not(:last-child) {
+	margin: 0 15px 40px 0;
+}
+.practice-body {
+	background-color: rgb(201, 199, 197);
+}
+.header-content h2 {
+	max-width: 450px;
+	font-size: 25px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	border: 2px dashed rgb(245, 247, 245);
+	background: cadetblue;
+	font-family: Causten-Bold, sans-serif;
+	font-weight: 700;
+	color: white;
+	border-radius: 25px;
+	box-shadow: 5px 5px 10px rgb(74, 71, 71);
+}
+.header-content h2::before {
+	content: "";
+	background-color: rgb(199, 150, 245);
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	outline: 1px solid white;
+	box-shadow: 5px 5px 5px rgb(83, 78, 78);
+	margin-right: 10px;
+}
+.header-content h2::after {
+	content: "";
+	background-color: rgb(199, 150, 245);
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	outline: 1px solid white;
+	box-shadow: 5px 5px 5px rgb(55, 52, 52);
+	margin-left: 10px;
+}
+.practice-body {
+	max-width: 1430px;
+	padding: 0 15px;
+	font-size: 20px;
+	line-height: 1.3;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.practice-body-content:hover .hover-content {
+	text-decoration: 2px underline rgb(22, 22, 22);
+	background-color: aquamarine;
+}
+.practice-body-content > p > a:hover {
+	text-decoration: 2px underline red;
+}
+.practice-body-content > p:first-of-type {
+	background: linear-gradient(
+		90deg,
+		rgba(255, 255, 160, 1) 14%,
+		rgba(255, 137, 117, 1) 41%,
+		rgba(146, 117, 226, 1) 73%,
+		rgba(142, 246, 234, 1) 93%
+	);
+}
+.practice-body-content > p:last-of-type {
+	background: url(../img/practice/photo-roses.jpg) center / cover no-repeat;
+	border-radius: 20px;
+	padding: 20px 5px;
+}
+.practice-body-content > p {
+	padding-left: 10px;
+	font-family: Inter, sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+}
+.hover-content-link:visited {
+	color: red;
+}
+.practice-body-content > ul > li:not(:last-child) {
+	margin-right: 20px;
+}
+.practice-body-content > ul {
+	text-align: center;
+	font-family: Poppins, sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+}
+.practice-body-content > ul > li {
+	display: inline-block;
+	max-width: 200px;
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: rgb(199, 150, 245);
+	line-height: 1.3;
+	outline: 2px solid white;
+	border-radius: 25px;
+	box-shadow: 5px 5px 5px rgb(55, 52, 52);
+}
+.practice-body-content > ul > li:active {
+	background-color: blueviolet;
+	color: aliceblue;
+}
+.practice-body-content > ul > li::before {
+	content: "";
+	background-color: blueviolet;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	outline: 1px solid white;
+	border-radius: 50%;
+	margin: -3px 20px 0 0;
+}
+.practice-body-content > p:not(:last-child) {
+	margin-bottom: 20px;
+}
+.practice-body-content {
+	margin-bottom: 30px;
+}
+.practice-link > a {
+	display: block;
+	font-family: Inter, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+	padding: 5px;
+}
+.practice-link > a:hover {
+	text-decoration: underline;
+	color: rgb(245, 248, 247);
+	background-color: cadetblue;
+}
+.practice-link a:visited{
+	color: #78473b;
+}
+.practice-link > a:not(:last-child) {
+	margin-bottom: 10px;
+}
+.practice-link > a:nth-child(even) {
+	background-color: rgba(203, 6, 238, 0.383);
+}
+.practice-link > a::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	background-color: aliceblue;
+	display: inline-block;
+	margin-right: 10px;
+}
+.practice-link > a::after {
+	content: "";
+	width: 15px;
+	height: 15px;
+	background-color: aliceblue;
+	display: inline-block;
+	margin-left: 10px;
+}
+.practice-link h5 {
+	text-align: center;
+	font-family: Poppins, sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	color: slateblue;
+}
+.practice-link p:active {
+	background: url(../img/practice/photo-roses.jpg) center / cover no-repeat;
+}
+.practice-link p:last-child {
+	border-radius: 20px;
+	background-color: rgba(255, 233, 109, 0.701);
+	padding: 5px;
+}
+.practice-link p:not(:last-child) {
+	margin-bottom: 10px;
+}
+/* === Макет №1 ====== */
+.consalting {
+	max-width: 722px;
+	padding: 0 15px;
+	font-family: Inter, sans-serif;
+	font-weight: 400;
+	line-height: 1.46;
+	font-size: 18px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.consalting-block-1 h2,
+.consalting-block-3 h2 {
+	color: #37393f;
+	font-family: Poppins, sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 10px;
+}
+.consalting-block-1 {
+	margin-bottom: 42px;
+}
+.consalting-block-2 :first-child {
+	color: #6b77e5;
+	font-family: Poppins, sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 12px;
+}
+.consalting-block-1 p,
+.consalting-block-2 p,
+.consalting-block-3 p {
+	color: #7d7d7d;
+	font-family: Inter, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+.consalting-block-2 {
+	margin-bottom: 40px;
+}
+
+.consalting-item {
+	max-width: 332px;
+	display: inline-block;
+	vertical-align: top;
+}
+.consalting-img {
+	background: url(../img/consalting.jpg) center / cover no-repeat;
+	max-width: 331px;
+	height: 265.802px;
+	font-size: 0;
+	width: 100%;
+	display: inline-block;
+	margin-right: 23px;
+}
+.consalting-item > ul {
+	max-width: 313px;
+	color: #7d7d7d;
+	font-family: Inter, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: normal;
+}
+.consalting-item > ul > li::before {
+	content: "";
+	background: url(../img/icon/consalting-icon.png) center no-repeat;
+	margin-right: 8px;
+	width: 27px;
+	height: 27px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.consalting-item > ul > li:not(:last-child) {
+	margin-bottom: 30px;
+}
+.consalting-item h3 {
+	color: #37393f;
+	font-family: Poppins, sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.27;
+}
+.consalting-item h4 {
+	color: #40ddb6;
+	font-family: Poppins, sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+}
+.consalting-item h3:first-child {
+	margin-bottom: 15px;
+}
+.consalting-item h4 {
+	margin-bottom: 21px;
+}
+.consalting-list {
+	margin-bottom: 50px;
+	font-size: 0;
+}
+/* ===Макет №2==== */
+.whitecollar {
+	max-width: 702px;
+	padding: 0 15px;
+	color: #7d7d7d;
+	font-family: Inter, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.46;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.whitecollar-block-1 h5 {
+	color: #37393f;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 16px;
+}
+.whitecollar-block-1 h5::before {
+	content: "";
+	background-color: #40ddb6;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-right: 8px;
+}
+.whitecollar-block-1 h1 {
+	color: #37393f;
+	font-family: Poppins, sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.21;
+	max-width: 415px;
+	margin-bottom: 10px;
+}
+.whitecollar-block-1 p:not(:last-child) {
+	margin-bottom: 16px;
+}
+.whitecollar-block-1 {
+	margin-bottom: 48px;
+}
+.li-title {
+	color: #37393f;
+	font-family: Poppins, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin-bottom: 12px;
+}
+.whitecollar-block-2 > ul > li:last-child {
+	padding-left: 46px;
+}
+.whitecollar-block-3 > ul > li:last-child {
+	padding-left: 46px;
+}
+
+.whitecollar-block-2 {
+	margin-bottom: 31px;
+}
+.whitecollar-block-2,
+.whitecollar-block-3 {
+	padding: 28px 41px 28px 38px;
+	border: 1px solid #e3e3e3;
+}
+.li-title::before {
+	content: "";
+	background: url(../img/icon/consalting-icon.png) center no-repeat;
+	display: inline-block;
+	margin-right: 19px;
+	width: 27px;
+	height: 27px;
+	margin-bottom: -5px;
+}
+
+.whitecollar-block-li {
+	margin-bottom: 48px;
+}
+.whitecollar-link a {
+	color: #fff;
+	text-align: center;
+	font-family: Inter, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: capitalize;
+	display: inline-block;
+	max-width: 200px;
+	padding: 21px 35px 22px 35px;
+	background: #6b77e5;
+}
+.whitecollar-link a:hover {
+	text-decoration: underline;
+	background-color: #1f1f95;
+}
+/* ===Макет №3=== */
+.work-process {
+	max-width: 1250px;
+	padding: 0 15px;
+	margin: 0 auto 50px;
+}
+.work-process-title {
+	max-width: 283px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 77px;
+}
+.work-process-title h6 {
+	color: #37393f;
+	font-family: Inter, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-align: center;
+	margin-bottom: 16px;
+}
+.work-process-title h6::before {
+	content: "";
+	background-color: #40ddb6;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-right: 6px;
+	margin-bottom: 1px;
+}
+.work-process-title h2 {
+	color: #37393f;
+	font-family: Poppins, sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.21;
+}
+
+.construction a:hover {
+	text-decoration: underline;
+}
+.construction {
+	font-size: 0;
+}
+.appointment-content,
+.consultation,
+.service:not(:last-of-type) {
+	margin-right: 25px;
+}
+
+.appointment-content,
+.consultation,
+.service {
+	max-width: 386px;
+	padding: 58px 43px;
+	background: #f4f4f4;
+	display: inline-block;
+	text-align: center;
+	display: inline-block;
+}
+.appointment p,
+.consultation p,
+.service p {
+	color: #7d7d7d;
+	font-family: Inter, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.46;
+	max-width: 300px;
+	margin-bottom: 37px;
+}
+.appointment h3,
+.consultation h3,
+.service h3 {
+	color: #37393f;
+	font-family: Poppins, sans-serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 16px;
+}
+.processe-link:hover {
+	color: #e3e3e3;
+	background-color: #ffffff;
+
+	border-radius: 15px;
+}
+.processe-link a {
+	color: #6b77e5;
+	font-family: Inter, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+.appointment-img {
+	display: inline-block;
+	background: url(../img/icon/icon-1.jpg) no-repeat;
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	margin-top: -94px;
+	margin-bottom: 36px;
+}
+
+.icon-2 {
+	display: inline-block;
+	background: url(../img/icon/icon-2.jpg) no-repeat;
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	margin-top: -94px;
+	margin-bottom: 36px;
+}
+
+.icon-3 {
+	display: inline-block;
+	background: url(../img/icon/icon-3.png) no-repeat;
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	margin-top: -94px;
+	margin-bottom: 36px;
+}
+/* ===Макет №4 ===== */
+.custom-jewels {
+	max-width: 1244px;
+	padding: 50px 15px 30px 15px;
+	margin: 0 auto;
+}
+.custom-jewels-title {
+	color: #000;
+	font-family: "Cormorant Infant", serif;
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.15;
+	display: inline-block;
+	max-width: 488px;
+	vertical-align: top;
+	margin-top: 118px;
+}
+.custom-jewels-title h2::after {
+	content: "";
+	height: 3px;
+	width: 62%;
+	background-color: #78473b;
+	display: inline-block;
+}
+.card-1,
+.card-2 {
+	display: inline-block;
+	max-width: 334px;
+}
+.card-2 {
+	margin-top: -42px;
+}
+.card-1 {
+	margin: 0 45px 0 -9px;
+	margin-right: 45px;
+	vertical-align: top;
+}
+.card-1 h6,
+.card-2 h6 {
+	color: #000;
+	font-family: "Cormorant Infant", serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.4;
+	margin-bottom: 4px;
+}
+.card-1 p,
+.card-2 p {
+	color: #000;
+	font-family: "Cormorant Infant", serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.4;
+}
+.card-img-1 img,
+.card-2 img {
+	width: 100%;
+	margin: 9px -10px -9px 10px;
+	display: inline-block;
+}
+.card-img-1,
+.card-img-2 {
+	width: 100%;
+	display: inline-block;
+	width: 334px;
+	height: 381px;
+
+	border: 1px solid #000;
+	margin-bottom: 25px;
+	margin-top: 0px;
+}
+.card-2 h3:first-of-type {
+	color: #000;
+	font-family: "Cormorant Infant", serif;
+	font-size: 46px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.13;
+	margin-bottom: 31px;
+}
+.card-1:hover {
+	text-decoration: underline;
+}
+.card-2:hover {
+	text-decoration: underline;
+}
+
+.card-img-1 img:active {
+	box-shadow: -5px -5px 5px #aca791;
+	opacity: 0.5;
+}
+.card-img-2 img:active {
+	box-shadow: -5px -5px 5px #aca791;
+	opacity: 0.5;
+}
+/* ГРА */
+.game {
+	max-width: 1000px;
+	min-height: 500px;
+	padding: 30px 30px;
+	margin: 0 auto 30px;
+	background: url(../img/game-background.jpg) center / cover no-repeat;
+	font-size: 0;
+}
+.game h2{
+	margin: 0 auto 10px;
+	font-family: "Cormorant Infant", serif;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.13;
+}
+.game-line {
+	background-color: #866742;
+	border: 3px solid rgb(172, 127, 79);
+	display: inline-block;
+	box-shadow: inset 5px 3px 5px rgb(60, 33, 14);
+}
+.game-line-start {
+	width: 50px;
+	height: 60px;
+	visibility: visible;
+}
+.game-line-1 {
+	width: 250px;
+	height: 40px;
+	margin: 0 0 -25px -50px;
+	visibility: hidden;
+}
+.game-line-2 {
+	width: 150px;
+	height: 30px;
+	margin: 0 0 -25px -5px;
+	 visibility: hidden; 
+}
+.game-line-3 {
+	width: 25px;
+	height: 150px;
+	vertical-align: top;
+	margin: 55px 0 0 -5px;
+	visibility: hidden; 
+}
+.game-line-4 {
+	width: 350px;
+	height: 20px;
+	vertical-align: bottom;
+	margin-left: -5px;
+	visibility: hidden; 
+}
+.game-line-5 {
+	width: 20px;
+	height: 150px;
+	vertical-align: bottom;
+	margin-bottom: -130px;
+	margin-left: -10px;
+	visibility: hidden; 
+}
+.game-line-6 {
+	width: 330px;
+	height: 20px;
+	margin: 110px 0 0 420px;
+	visibility: hidden; 
+}
+.game-line-7 {
+	width: 12px;
+	height: 100px;
+	margin: -20px 0 0 420px;
+	 visibility: hidden; 
+}
+.game-line-7::after {
+	content: "";
+	background: url(../img/practice/icon-winner.png) center / contain no-repeat;
+	width: 40px;
+	height: 50px;
+	display: inline-block;
+	margin: 90px 0px 0px -18px;
+}
+
+.game-line-start:hover ~ .game-line-1,
+.game-line-1:hover {
+	visibility: visible;
+}
+.game-line-1:hover ~ .game-line-2,
+.game-line-2:hover {
+	visibility: visible;
+}
+.game-line-2:hover ~ .game-line-3,
+.game-line-3:hover {
+	visibility: visible;
+}
+.game-line-3:hover ~ .game-line-4,
+.game-line-4:hover {
+	visibility: visible;
+}
+.game-line-4:hover ~ .game-line-5,
+.game-line-5:hover {
+	visibility: visible;
+}
+.game-line-5:hover ~ .game-line-6,
+.game-line-6:hover {
+	visibility: visible;
+}
+.game-line-6:hover ~ .game-line-7,
+.game-line-7:hover {
+	visibility: visible;
+}
+/* footer */
+.footer{
+	max-width: 1600px;
+	margin: 0 auto 10px;
+	text-align: center;
+	background-color: #7d7d7d;
+}
+.footer a{
+	display: block;
+	font-family: "Cormorant Infant", serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.13;
+	padding: 30px ;
+}
+.footer:hover a{
+	text-decoration: underline;
+	color: #d3d3d3;
+	
+}
