@@ -1,0 +1,140 @@
+/* підключення за допомогою плагіну */
+
+@import url("fonts.css");
+@import url("reset.css");
+body {
+	background: url(../img/pattern.avif);
+	font-size: 0;
+	max-width: 1500px;
+}
+.title {
+	background-color: rgb(31, 31, 32);
+	text-align: center;
+}
+.title h2 {
+	font-family: Causten, sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	padding: 20px;
+	color: bisque;
+}
+.icon {
+	font-family: Causten, sans-serif;
+	font-size: 20px;
+	line-height: 1.4;
+	font-weight: 300;
+	background-color: rgb(31, 31, 32);
+	max-width: 400px;
+	text-align: center;
+	margin: 20px  auto 20px;
+	padding: 30px;
+	box-shadow: 10px 10px 10px rgb(33, 31, 31);
+}
+.icon:hover p{
+	text-decoration: 2px underline rgb(11, 112, 72);
+}
+.icon p{
+	margin-bottom: 20px;
+	color: bisque;
+}
+.icon p:last-of-type{
+	margin-bottom: 0;
+}
+.icon p>img{
+	vertical-align: middle;
+	margin-right: 10px
+}
+.content-row-1 {
+	background-color:  rgb(133, 132, 130);
+	text-align: center;
+	padding: 30px;
+	font-size: 0;
+	margin-bottom: 30px;
+	box-shadow: 10px 10px 10px rgb(33, 31, 31);
+}
+.content-row-1 p{
+	font-family: Causten, sans-serif;
+	font-size: 20px;
+	line-height: 1.4;
+	font-weight: 400;
+	display: inline-block;
+}
+.content-row-1 p:not(:last-child){
+	margin-right: 20px;
+}
+.content-row-1 img{
+	vertical-align: middle;
+	margin-right: 10px
+}
+.content-row-1:hover p{
+	text-decoration: 2px underline rgb(11, 112, 72);
+	
+}
+.content-row-2 {
+	background-color:  rgb(133, 132, 130);
+	text-align: center;
+	padding: 30px;
+	font-size: 0;
+	margin-bottom: 30px;
+	box-shadow: 10px 10px 10px rgb(33, 31, 31);
+}
+.content-row-2 p{
+	font-family: Causten, sans-serif;
+	font-size: 20px;
+	line-height: 1.4;
+	font-weight: 400;
+	display: inline-block;
+}
+.content-row-2 p:not(:last-child){
+	margin-right: 20px;
+}
+.content-row-2 img{
+	vertical-align: middle;
+	margin-right: 10px
+}
+.content-row-2:hover p{
+	text-decoration: 2px underline rgb(11, 112, 72);
+}
+.content-row-3 {
+	background-color:  rgb(133, 132, 130);
+	text-align: center;
+	padding: 30px;
+	font-size: 0;
+	margin-bottom: 30px;
+	box-shadow: 10px 10px 10px rgb(33, 31, 31);
+}
+.content-row-3 p{
+	font-family: Causten, sans-serif;
+	font-size: 20px;
+	line-height: 1.4;
+	font-weight: 400;
+	display: inline-block;
+}
+.content-row-3 p:not(:last-child){
+	margin-right: 20px;
+}
+.content-row-3 img{
+	vertical-align: middle;
+	margin-right: 10px;
+	font-size: 0;
+}
+.content-row-3:hover p{
+	text-decoration: 2px underline rgb(11, 112, 72);
+}
+.content-photo{
+	padding: 20px;
+	text-align: center;
+}
+.content-photo p{
+	font-family: Causten, sans-serif;
+	font-size: 20px;
+	line-height: 1.4;
+	font-weight: 400;
+	color: bisque;
+}
+.content-photo p>img{
+	max-width: 400px;
+	vertical-align: middle;
+	margin-right: 10px;
+	font-size: 0;
+}
