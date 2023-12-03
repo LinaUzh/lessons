@@ -1,0 +1,865 @@
+/* підключення за допомогою плагіну */
+
+@import url("fonts.css");
+@import url("reset.css");
+body {
+	background-color: grey;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+.header {
+	max-width: 1200px;
+	padding: 15px 15px 50px 15px;
+	margin: 0 auto;
+}
+.header__title,
+.page__title {
+	font-family: Poppins, serif;
+	font-size: 35px;
+	text-align: center;
+	padding: 10px;
+	font-weight: 700;
+	color: aliceblue;
+	border: solid 5px rgb(53, 52, 52);
+	border-radius: 20px;
+	margin-bottom: 15px;
+	box-shadow: 5px 5px 5px black;
+	text-shadow: 5px 5px 5px black;
+	letter-spacing: 3px;
+}
+.header__nav {
+	text-align: center;
+}
+.header__link:not(:last-child) {
+	margin-right: 30px;
+}
+.header__link {
+	font-family: Poppins, serif;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+	font-weight: 700;
+	color: aliceblue;
+	border: solid 5px rgb(53, 52, 52);
+	border-radius: 20px;
+	max-width: 200px;
+	box-shadow: 5px 5px 5px black;
+	letter-spacing: 3px;
+	text-shadow: 5px 5px 5px black;
+}
+.page {
+	padding: 15px;
+	margin: 0 auto;
+	font-size: 0;
+	max-width: 1200px;
+	text-align: center;
+}
+.page__title {
+	font-size: 25px;
+}
+.part-one {
+	padding-bottom: 50px;
+}
+.part-one div:nth-child(4) {
+	margin-right: 0;
+}
+.transition,
+.duration,
+.sub-duration,
+.property,
+.timing {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 50px;
+}
+.transition__title,
+.duration__title,
+.sub-duration__title,
+.property__title,
+.timing__title {
+	font-family: Poppins, serif;
+	font-size: 20px;
+	text-align: center;
+	padding: 5px;
+	font-weight: 600;
+	color: aliceblue;
+	margin-bottom: 15px;
+	width: 100%;
+}
+.transition__block,
+.duration__block,
+.sub-duration__block,
+.property__block,
+.timing__block {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(53, 52, 52);
+}
+.transition__block:hover {
+	transition: all 0.6s ease 0.3s;
+	opacity: 0;
+}
+.duration__block:hover {
+	transition-duration: 1s;
+	background-color: rgb(59, 29, 86);
+	border-radius: 50%;
+}
+.sub-duration__block:hover {
+	transition-duration: 0.4s;
+	border-radius: 50%;
+}
+.sub-duration:hover .sub-duration__photo {
+	transition-duration: 0.7s;
+	opacity: 1;
+	border-radius: 50%;
+}
+.sub-duration__photo {
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+	opacity: 0;
+	font-size: 0;
+}
+.property__block:hover {
+	transition-property: width, height, background-color;
+	transition-duration: 0.5s, 1s, 1.5s;
+	width: 300px;
+	height: 300px;
+	background-color: rgb(59, 29, 86);
+}
+.timing__block {
+	transition-duration: 1s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.timing__block {
+	transition-duration: 0.5s;
+}
+.timing__sub-block {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(59, 29, 86);
+	animation-iteration-count: infinite;
+	transform: rotate(360deg);
+}
+.footer {
+	background-color: rgb(53, 52, 52);
+	padding: 50px;
+}
+.footer__title {
+	font-family: Poppins, serif;
+	font-size: 27px;
+	text-align: center;
+	padding: 10px;
+	font-weight: 700;
+	color: aliceblue;
+	letter-spacing: 3px;
+	text-shadow: 5px 5px 5px black;
+}
+.delay {
+	max-width: 1200px;
+}
+.delay__block {
+	transition-duration: 0.5s;
+	margin-bottom: 15px;
+}
+.delay__block:hover .delay__sub-block {
+	opacity: 1;
+}
+.delay__sub-block {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: rgb(59, 29, 86);
+	transform: translate(-100%, 0px);
+	opacity: 0;
+}
+.delay__sub-block:not(:last-child) {
+	margin-right: 50px;
+}
+.delay__sub-block:nth-child(1) {
+	transition-delay: 0s;
+}
+.delay__sub-block:nth-child(2) {
+	transition-delay: 0.2s;
+}
+.delay__sub-block:nth-child(3) {
+	transition-delay: 0.4s;
+}
+.delay__sub-block:nth-child(4) {
+	transition-delay: 0.6s;
+}
+.delay__sub-block:nth-child(5) {
+	transition-delay: 0.8s;
+}
+.delay__sub-block:nth-child(6) {
+	transition-delay: 1s;
+}
+.delay__sub-block:nth-child(7) {
+	transition-delay: 1.2s;
+}
+.delay__sub-block:nth-child(8) {
+	transition-delay: 1.4s;
+}
+.delay__sub-block:nth-child(9) {
+	transition-delay: 1.6s;
+}
+/* .................Part two.......................*/
+.part-two {
+	padding-bottom: 50px;
+}
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.animation__title,
+.animation-two__title,
+.catch__title,
+.fill-mode__title {
+	font-family: Poppins, serif;
+	font-size: 20px;
+	text-align: center;
+	padding: 5px;
+	font-weight: 600;
+	color: aliceblue;
+	margin-bottom: 50px;
+	border: solid 3px rgb(53, 52, 52);
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px black;
+}
+.animation,
+.animation-two {
+	display: inline-block;
+	margin-right: 50px;
+}
+.animation__block,
+.animation-two__block {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(53, 52, 52);
+}
+.animation__block {
+	animation-name: rotate, color;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.animation__block:hover {
+	animation-play-state: paused;
+}
+@keyframes color {
+	0% {
+		background-color: rgb(53, 52, 52);
+	}
+	50% {
+		background-color: rgb(59, 29, 86);
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.animation-two {
+	margin-right: 0;
+}
+.animation-two__block {
+	animation-name: wiggle;
+	animation-duration: 0.8s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
+@keyframes wiggle {
+	0% {
+		transform: rotate(-25deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(25deg);
+	}
+}
+.row-tree {
+	padding-bottom: 30px;
+}
+.catch {
+	margin-bottom: 20px;
+}
+.catch__block {
+	width: 20px;
+	height: 20px;
+	background-color: rgb(59, 29, 86);
+	animation-name: run;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	position: relative;
+}
+@keyframes run {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 100%;
+	}
+}
+.catch__block:hover {
+	animation-play-state: paused;
+}
+.fill-mode {
+	margin-right: 0;
+}
+.fill-mode__block,
+.sub-fill-mode__block {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(53, 52, 52);
+	margin-bottom: 15px;
+	position: relative;
+	margin-right: 0;
+}
+.fill-mode__block {
+	animation-name: fill-run;
+	animation-duration: 0.6s;
+	animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+}
+@keyframes fill-run {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 90%;
+		background-color: rgb(17, 17, 100);
+	}
+}
+.sub-fill-mode__block {
+	animation-name: fill-run;
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+	margin-bottom: 0;
+}
+/*................... NEWTON.......... */
+.newton {
+	width: 300px;
+	height: 300px;
+	margin: 0% auto;
+	border-top: 10px solid rgb(34, 32, 32);
+	position: relative;
+}
+.newton:hover .newton__item {
+	animation-play-state: paused;
+}
+.newton__item {
+	position: absolute;
+	top: 0;
+	width: 33.333%;
+	height: 100%;
+	transform-origin: top;
+}
+.newton__item::before {
+	content: "";
+	width: 5px;
+	position: absolute;
+	background-color: rgb(53, 52, 52);
+	height: 100%;
+	left: 50%;
+	margin-left: -2.5px;
+}
+.newton__item::after {
+	content: "";
+	width: 100px;
+	height: 100px;
+	background-color: rgb(17, 17, 100);
+	border-radius: 50%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.newton__item:nth-child(1) {
+	left: 0;
+	animation: left-item 1s infinite ease-in alternate;
+}
+.newton__item:nth-child(2) {
+	left: 33.333%;
+}
+.newton__item:nth-child(3) {
+	right: 0;
+	margin-right: 2px;
+	animation: right-item 1s infinite ease-out alternate;
+}
+@keyframes left-item {
+	0% {
+		transform: rotate(45deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+}
+@keyframes right-item {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-45deg);
+	}
+}
+/* CAR */
+.car {
+	padding-top: 50px;
+	max-width: 1200px;
+	overflow: hidden;
+}
+.car__backgraund {
+	position: relative;
+}
+.car__sky {
+	width: 1170px;
+	height: 700px;
+	border-radius: 10px;
+	background: rgb(246, 247, 214);
+	background: linear-gradient(
+		0deg,
+		rgba(246, 247, 214, 0.9920343137254902) 19%,
+		rgba(87, 203, 214, 1) 54%,
+		rgba(45, 143, 253, 1) 100%
+	);
+	animation-name: backgraund-sky;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	position: relative;
+	animation-direction: alternate;
+}
+@keyframes backgraund-sky {
+	0% {
+		background: rgb(244, 246, 177);
+		background: linear-gradient(
+			0deg,
+			rgba(244, 246, 177, 0.9920343137254902) 19%,
+			rgba(87, 203, 214, 1) 69%,
+			rgba(45, 143, 253, 1) 100%
+		);
+	}
+	10% {
+		background: rgb(241, 245, 105);
+		background: linear-gradient(
+			0deg,
+			rgba(241, 245, 105, 0.9920343137254902) 19%,
+			rgba(87, 203, 214, 1) 69%,
+			rgba(45, 143, 253, 1) 100%
+		);
+	}
+	20% {
+		background: rgb(245, 203, 105);
+		background: linear-gradient(
+			0deg,
+			rgba(245, 203, 105, 0.9920343137254902) 19%,
+			rgba(87, 203, 214, 1) 55%,
+			rgba(45, 91, 253, 1) 94%
+		);
+	}
+	30% {
+		background: rgb(245, 194, 105);
+		background: linear-gradient(
+			0deg,
+			rgba(245, 194, 105, 0.9920343137254902) 24%,
+			rgba(87, 203, 214, 1) 60%,
+			rgba(45, 91, 253, 1) 91%
+		);
+	}
+	40% {
+		background: rgb(245, 163, 105);
+		background: linear-gradient(
+			0deg,
+			rgba(245, 163, 105, 0.9920343137254902) 24%,
+			rgba(87, 203, 214, 1) 56%,
+			rgba(45, 91, 253, 1) 79%
+		);
+	}
+	50% {
+		background: rgb(245, 194, 105);
+		background: linear-gradient(
+			0deg,
+			rgba(245, 194, 105, 0.9920343137254902) 0%,
+			rgba(87, 203, 214, 1) 17%,
+			rgba(48, 87, 226, 1) 54%
+		);
+	}
+	60% {
+		background: rgb(87, 203, 214);
+		background: linear-gradient(0deg, rgba(87, 203, 214, 1) 9%, rgba(48, 87, 226, 1) 42%, rgba(29, 49, 119, 1) 86%);
+	}
+	70% {
+		background: rgb(87, 203, 214);
+		background: linear-gradient(0deg, rgba(87, 203, 214, 1) 0%, rgba(48, 87, 226, 1) 28%, rgba(29, 49, 119, 1) 69%);
+	}
+	80% {
+		background: rgb(48, 87, 226);
+		background: linear-gradient(0deg, rgba(48, 87, 226, 1) 0%, rgba(29, 49, 119, 1) 34%);
+	}
+	90% {
+		background: rgb(33, 60, 154);
+		background: linear-gradient(0deg, rgba(33, 60, 154, 1) 29%, rgba(15, 21, 42, 1) 80%);
+	}
+	100% {
+		background: rgb(19, 55, 184);
+		background: linear-gradient(0deg, rgba(19, 55, 184, 1) 0%, rgba(15, 21, 42, 1) 65%);
+	}
+}
+.sun {
+	width: 100px;
+	height: 100px;
+	background: rgb(245, 245, 200);
+	background: radial-gradient(circle, rgba(245, 245, 200, 1) 0%, rgba(233, 205, 148, 1) 100%);
+	border-radius: 50%;
+	position: absolute;
+	bottom: 60px;
+	left: 10px;
+	box-shadow: 1px -0px 10px rgba(253, 253, 253, 0.764);
+	z-index: 1;
+	animation-name: sun;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes sun {
+	0% {
+		transform: translate(20px, -30px);
+	}
+	10% {
+		transform: translate(20px, -100px);
+	}
+	20% {
+		transform: translate(50px, -150px);
+		background: rgb(250, 250, 194);
+		background: radial-gradient(circle, rgba(250, 250, 194, 1) 31%, rgba(233, 204, 53, 1) 100%);
+	}
+	30% {
+		transform: translate(200px, -400px);
+		background: rgb(245, 245, 200);
+		background: radial-gradient(circle, rgba(245, 245, 200, 1) 18%, rgba(233, 174, 53, 1) 100%);
+	}
+	40% {
+		transform: translate(350px, -400px);
+		background: rgb(245, 245, 200);
+		background: radial-gradient(circle, rgba(245, 245, 200, 1) 0%, rgba(233, 174, 53, 1) 100%);
+	}
+	50% {
+		transform: translate(500px, -400px);
+		background: rgb(245, 245, 200);
+		background: radial-gradient(circle, rgba(245, 245, 200, 1) 0%, rgba(205, 141, 9, 1) 100%);
+	}
+	60% {
+		transform: translate(500px, -400px);
+		background: rgb(255, 255, 242);
+		background: radial-gradient(circle, rgba(255, 255, 242, 1) 35%, rgba(233, 204, 53, 1) 100%);
+	}
+	70% {
+		transform: translate(700px, -250px);
+		background: rgb(255, 255, 242);
+		background: radial-gradient(circle, rgba(255, 255, 242, 1) 41%, rgba(247, 234, 162, 1) 99%);
+	}
+	80% {
+		transform: translate(700px, -300px);
+		background: rgb(255, 255, 242);
+		background: radial-gradient(circle, rgba(255, 255, 242, 1) 41%, rgba(247, 234, 162, 1) 99%);
+	}
+	90% {
+		transform: translate(850px, -250px);
+		background: rgb(255, 255, 242);
+		background: radial-gradient(circle, rgba(255, 255, 242, 1) 41%, rgba(247, 234, 162, 1) 99%);
+	}
+	100% {
+		transform: translate(850px, -250px);
+		background: rgb(255, 255, 242);
+		background: radial-gradient(circle, rgba(255, 255, 242, 1) 41%, rgba(247, 234, 162, 1) 99%);
+	}
+}
+.car__mountain {
+	max-width: 1150px;
+	position: absolute;
+	bottom: 123px;
+	left: 10px;
+	z-index: 3;
+}
+.car__road {
+	width: 100%;
+	max-height: 200px;
+	position: absolute;
+	left: 0px;
+	bottom: -43px;
+	z-index: 2;
+}
+.car__body-container {
+position: relative;
+bottom:400px;
+left: 200px;
+z-index: 10;
+animation-name:move;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+}
+@keyframes move{
+	0%{
+		left: 100%;
+	}
+	100%{
+		left: 0%;
+		
+	}
+}
+.car__body {
+	width: 250px;
+	height: 150px;
+	background-color: rgb(10, 181, 163);
+	
+}
+.car__windscreen {
+	width: 0;
+	height: 0;
+	border-bottom: 150px solid #90e0f0;
+	border-left: 100px solid transparent;
+}
+.car__upper-part {
+	width: 150px;
+	height: 150px;
+	background-color: rgb(21, 148, 135);
+	perspective: 100px;
+}
+.car__window {
+	width: 75px;
+	height: 105px;
+	border-radius: 50px 50px / 20px 20px;
+	background: #83ecea;
+	position: relative;
+	top: 20px;
+	left: 30px;
+	outline: solid 1px green;
+	transform: translatex(-15px);
+}
+.car__window:hover {
+	transform: rotatey(-50deg);
+	transition: 1s;
+	transform-origin: center top;
+	backface-visibility: visible;
+	background-color: rgb(148, 129, 193);
+}
+.car__door {
+	width: 105px;
+	height: 200px;
+	border-radius: 50px 50px / 20px 20px;
+	background: #9fd3c2;
+	position: relative;
+	top: 15px;
+	left: 30px;
+	outline: solid 3px rgb(40, 99, 24);
+	backface-visibility: hidden;
+}
+.car__upper-part:hover .car__door {
+	transform: rotatey(-180deg);
+	transform-style: preserve-3d;
+	transition: 1s;
+	transform-origin: left top;
+	backface-visibility: visible;
+	background-color: rgb(172, 145, 14);
+}
+.headlight {
+	width: 20px;
+	height: 50px;
+	background-color: rgb(185, 244, 10);
+	border-radius: 30px;
+	position: relative;
+	top: 30px;
+	right: 5px;
+}
+@keyframes headlight {
+0% {
+opacity: 0;
+}
+30%{
+	opacity: 0;
+}
+70%{
+	opacity: 0.5;
+	visibility: visible;
+}
+100%{
+	opacity: 0.9;
+}
+}
+.headlight__light {
+	width: 0;
+	height: 0;
+	border-top: 100px solid transparent;
+	border-left: 200px solid rgb(225, 225, 95);
+	border-bottom: 100px solid transparent;
+	position: relative;
+	top: -70px;
+	right: 200px;
+	visibility: hidden;
+	opacity: 0;
+	animation-name:headlight ;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+.headlight:hover .headlight__light {
+	visibility: visible;
+}
+.turn-signal {
+	width: 20px;
+	height: 10px;
+	background-color: rgb(244, 158, 10);
+	border-radius: 10px;
+	transform: translate(20px, -30px);
+}
+.wheel {
+	width: 130px;
+	height: 130px;
+	background-color: rgb(52, 48, 48);
+	border-radius: 50%;
+	position: relative;
+	top: -65px;
+	left: 50px;
+	outline: dashed 5px rgb(8, 7, 6);
+	animation-name: wheel;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.wheel__two {
+	width: 65px;
+	height: 65px;
+	background-color: rgb(110, 103, 103);
+	border-radius: 50%;
+	transform: translate(32px, 32px);
+}
+.wheel__end {
+	width: 65px;
+	height: 5px;
+	background-color: rgb(209, 199, 199);
+	transform: translatey(32px);
+	
+}
+@keyframes wheel{
+	0%{transform: rotate(360deg);
+}
+}
+.car__down {
+	width: 500px;
+	height: 35px;
+	background-color: rgb(10, 181, 163);
+	transform: translate(250px, -165px);
+}
+.wheel-back {
+	width: 130px;
+	height: 130px;
+	background-color: rgb(52, 48, 48);
+	border-radius: 50%;
+	position: relative;
+	top: -25px;
+	left: 40px;
+	outline: dashed 5px rgb(8, 7, 6);
+	animation-name: wheel;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.wheel-back__two {
+	width: 65px;
+	height: 65px;
+	background-color: rgb(110, 103, 103);
+	border-radius: 50%;
+	transform: translate(32px, 32px);
+	
+}
+.wheel-back__end {
+	width: 65px;
+	height: 5px;
+	background-color: rgb(209, 199, 199);
+	transform: translatey(32px);
+}
+.wheel-back-last {
+	width: 130px;
+	height: 130px;
+	background-color: rgb(52, 48, 48);
+	border-radius: 50%;
+	position: relative;
+	top: -155px;
+	left: 290px;
+	outline: dashed 5px rgb(8, 7, 6);
+	animation-name: wheel;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.wheel-back-last__two {
+	width: 65px;
+	height: 65px;
+	background-color: rgb(110, 103, 103);
+	border-radius: 50%;
+	transform: translate(32px, 32px);
+}
+.wheel-back-last__end {
+	width: 65px;
+	height: 5px;
+	background-color: rgb(209, 199, 199);
+	transform: translatey(32px);
+}
+.wheel-back-last:hover {
+	transition: 1s;
+	transform: rotate(360deg);
+}
+.some-element {
+	width: 300px;
+	height: 70px;
+	background-color: rgb(19, 58, 57);
+	position: absolute;
+	top: -60px;
+	left: 75px;
+}
+.car__container {
+	height: 0;
+	width: 450px;
+	border-top: 150px solid #ffe344;
+	border-left: 60px solid transparent;
+	border-right: 00px solid transparent;
+	position: absolute;
+	top: -210px;
+	left: 0px;
+}
+.car-last {
+	height: 200px;
+	width: 30px;
+	background-color: rgb(19, 58, 57);
+	position: absolute;
+	top: 0;
+	left: 130px;
+	visibility: hidden;
+}
+.car__container:hover {
+	transform-origin: right bottom;
+	transform: rotatez(30deg);
+	transition: 1s;
+}
+.car__container:hover .car-last {
+	visibility: visible;
+}
